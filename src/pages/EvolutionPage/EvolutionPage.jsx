@@ -12,6 +12,7 @@ import {
 import api from '../../api/api';
 import { Activity } from 'lucide-react';
 import Loader from '../../components/common/Loader/Loader';
+import TraitsExplanation from '../../components/common/TraitsExplanation/TraitsExplanation';
 
 const EvolutionPage = () => {
   const [history, setHistory] = useState([]);
@@ -174,7 +175,17 @@ const EvolutionPage = () => {
       <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-md p-4 sm:p-6">
         {renderContent()}
       </div>
+      
+
+      <div className="mt-12">
+    <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6 text-center">
+      ¿Qué significa cada rasgo?
+    </h2>
+    <TraitsExplanation /> 
+  </div>
+  
     </div>
+    
   );
 };
 

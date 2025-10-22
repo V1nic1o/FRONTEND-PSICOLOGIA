@@ -5,7 +5,7 @@ import loaderAnimation from '../../../assets/animations/loader.json';
 const Loader = () => {
   const style = {
     // 1. Aumentamos el tamaño al doble (de 200 a 400)
-    height: 400, 
+    height: 600, 
   };
 
   return (
